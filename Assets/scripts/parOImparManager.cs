@@ -20,17 +20,17 @@ public class parOImparManager : MonoBehaviour
     }
     public void paroimpar()
     {
-        int numero = int.Parse(inputNumero.text);
-        if(numero < 1)
+        int num1 = int.Parse(inputNumero.text);
+        if(num1 < 1)
         {
             txtResult.text = "PON UN NÚMERO MAYOR A 0";
-        }else if(numero % 2 == 1)
+        }else if(num1 % 2 == 1)
         {
-            txtResult.text = "El número es impar";
+            txtResult.text = $"El número {num1} es impar";
         }
         else
         {
-            txtResult.text = "El numero es par";
+            txtResult.text = $"El número {num1} es par";
         }
     }
 }
